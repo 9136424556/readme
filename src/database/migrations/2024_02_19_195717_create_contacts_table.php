@@ -17,6 +17,7 @@ class CreateContactsTable extends Migration
             $table->id();
                $table->string('name');
                $table->string('email');
+               $table->string('tel',11);
             $table->timestamps();
         });
     }

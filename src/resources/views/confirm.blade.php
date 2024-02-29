@@ -29,14 +29,19 @@
                         <tr class="table-row">
                             <th class="table-head">お名前</th>
                             <td class="table-text">
-                                <input type="text" name="name1" value="{{ $contact['name1'] }}"  readonly/>
-                                <input type="text" name="name2" value="{{ $contact['name2'] }}"  readonly/>
+                                <span class="table-name">
+                                     <input type="text" name="name" value="{{ $contact['name'] }}"  readonly/>
+                                </span>
+                                <span class="table-name">
+                                     <input type="text" name="name" value="{{ $contact['name'] }}"  readonly/>
+                                </span>
+                               
                             </td>
                         </tr>
                         <tr class="table-row">
                             <th class="table-head">性別</th>
                             <td class="table-text">
-                                <input type="radio" name="button" value="{{ $contact['button'] }}" readonly/>
+                                <input type="text" name="button" value="{{ $contact['button'] }}" readonly/>
                             </td>
                          </tr>
                          <tr class="table-row">
@@ -46,8 +51,8 @@
                          </tr>
                          <tr class="table-row">
                             <td class="table-text">
-                                <input type="tel" name="tel" value="{{ $contact['tel'] }}" readonly/>
-                            </td>
+                            <input type="tel" name="tel" value="{{ $contact['tel'] }}" readonly/>
+                             </td>
                          </tr>
                          <tr class="table-row">
                             <td class="table-text">
@@ -70,6 +75,7 @@
                             </td>
                          </tr>
                     </table>
+                
                 </div>
                 <div class="form__button">
                     <button class="form__button-submit">送信</button>

@@ -14,6 +14,10 @@ class ContactstableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $param = [
+           
+           
+        ];
+        DB::table('contacts')->insert($param);
     }
 }

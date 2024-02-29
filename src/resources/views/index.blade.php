@@ -37,8 +37,11 @@
                 </div>
                 <div class="form-group">
                     <div class="form-input">
-                        <input type="text" name="name1" placeholder="例：山田" value="{{ old('name') }}"/>
-                        <input type="text" name="name2" placeholder="例：太郎" value="{{ old('name') }}"/>
+                        <input type="text" name="name" placeholder="例：山田" value="{{ old('name') }}"/>
+                        
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="name" placeholder="例：太郎" value="{{ old('name') }}"/>
                     </div>
                     <div class="form-error">
                         @error('name')
@@ -88,9 +91,9 @@
                 </div>
                 <div class="form-group">
                     <div class="form-input">
-                        <input type="tel" name="tel1" placeholder="080" value="{{ old('tel') }}"/>
-                        <input type="tel" name="tel2" placeholder="1234" value="{{ old('tel') }}"/>
-                        <input type="tel" name="tel3" placeholder="5678" value="{{ old('tel') }}"/>
+                        <input type="tel" name="tel" placeholder="080" value="{{ old('tel') }}"/>
+                        <input type="tel" name="tel" placeholder="1234" value="{{ old('tel') }}"/>
+                        <input type="tel" name="tel" placeholder="5678" value="{{ old('tel') }}"/>
                     </div>
                 </div>
             </div>
